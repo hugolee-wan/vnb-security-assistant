@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Rust build artifacts & caches
+/target/
+**/*.rs.bk
+
+# IDE & Editor directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local runtime logs, quarantine & temporary files
+*.log
+*.tmp
+quarantine/
+audit_logs/

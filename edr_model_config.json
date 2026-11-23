@@ -1,0 +1,23 @@
+{
+  "decision_mode": "Network9006System1",
+  "decision_endpoint": "http://127.0.0.1:9006/v1/systemone",
+  "decision_temperature": 0.85,
+  "micro_lm_gate_gain": 0.4,
+  "z3_threat_bias": 0.0,
+  "handoff_risk_threshold": 0.35,
+  "distill_feedback_to_decision": true,
+  "reasoning_mode": "NetworkHttpChat",
+  "reasoning_endpoint": "http://127.0.0.1:9006/v1/chat/completions",
+  "reasoning_model_name": "qwen3.8-27b",
+  "reasoning_api_key": "",
+  "simple_cli_command": "model-gateway-rs",
+  "reasoning_temperature": 0.1,
+  "reasoning_max_tokens": 180,
+  "reasoning_timeout_ms": 5500,
+  "custom_system_prompt": "你是跨平台二进制逆向与行为安全推理专家（macOS / Windows）。请结合决策模型先验、二进制特征与实时活动特征直接输出3行：二进制剖析 / 活动行为推演 / 推理裁决",
+  "collaboration_handoff_count": 0,
+  "distillation_sync_count": 0,
+  "last_collab_test_summary": "就绪：可自由编辑下方 URL、模型名、API Key、CLI 命令及超参数，点击按钮立即实测或保存应用",
+  "last_decision_test_output": "点击「测试决策模型」查看 S->Z->A 概率分布与 SimHash 响应",
+  "last_reasoning_test_output": "点击「测试推理模型」查看 HTTP/CLI 端到端推理响应与速率"
+}
